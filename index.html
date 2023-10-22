@@ -1,67 +1,51 @@
-<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01//EN" "http://www.w3.org/TR/html4/strict.dtd">
-<html>
+<!DOCTYPE html>
+<html lang="de">
+
 <head>
-  <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
-  <meta http-equiv="Content-Style-Type" content="text/css">
-  <title></title>
-  <meta name="Generator" content="Cocoa HTML Writer">
-  <meta name="CocoaVersion" content="2299.4">
-  <style type="text/css">
-    p.p1 {margin: 0.0px 0.0px 0.0px 0.0px; font: 12.0px Helvetica}
-    p.p2 {margin: 0.0px 0.0px 0.0px 0.0px; font: 12.0px Helvetica; min-height: 14.0px}
-  </style>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Überraschung für meine Freundin</title>
+    <style>
+        #herz {
+            display: none;
+            font-size: 2em;
+            color: red;
+            text-align: center;
+            margin-top: 50px;
+        }
+
+        #herz:before {
+            content: "♥";
+            font-size: 3em;
+            display: block;
+            margin-bottom: 10px;
+        }
+    </style>
 </head>
+
 <body>
-<p class="p1">&lt;!DOCTYPE html&gt;</p>
-<p class="p1">&lt;html lang="de"&gt;</p>
-<p class="p2"><br></p>
-<p class="p1">&lt;head&gt;</p>
-<p class="p1"><span class="Apple-converted-space">    </span>&lt;meta charset="UTF-8"&gt;</p>
-<p class="p1"><span class="Apple-converted-space">    </span>&lt;meta name="viewport" content="width=device-width, initial-scale=1.0"&gt;</p>
-<p class="p1"><span class="Apple-converted-space">    </span>&lt;title&gt;Überraschung für meine Freundin&lt;/title&gt;</p>
-<p class="p1"><span class="Apple-converted-space">    </span>&lt;style&gt;</p>
-<p class="p1"><span class="Apple-converted-space">        </span>#herz {</p>
-<p class="p1"><span class="Apple-converted-space">            </span>display: none;</p>
-<p class="p1"><span class="Apple-converted-space">            </span>font-size: 2em;</p>
-<p class="p1"><span class="Apple-converted-space">            </span>color: red;</p>
-<p class="p1"><span class="Apple-converted-space">            </span>text-align: center;</p>
-<p class="p1"><span class="Apple-converted-space">            </span>margin-top: 50px;</p>
-<p class="p1"><span class="Apple-converted-space">        </span>}</p>
-<p class="p2"><br></p>
-<p class="p1"><span class="Apple-converted-space">        </span>#herz:before {</p>
-<p class="p1"><span class="Apple-converted-space">            </span>content: "♥";</p>
-<p class="p1"><span class="Apple-converted-space">            </span>font-size: 3em;</p>
-<p class="p1"><span class="Apple-converted-space">            </span>display: block;</p>
-<p class="p1"><span class="Apple-converted-space">            </span>margin-bottom: 10px;</p>
-<p class="p1"><span class="Apple-converted-space">        </span>}</p>
-<p class="p1"><span class="Apple-converted-space">    </span>&lt;/style&gt;</p>
-<p class="p1">&lt;/head&gt;</p>
-<p class="p2"><br></p>
-<p class="p1">&lt;body&gt;</p>
-<p class="p2"><br></p>
-<p class="p1"><span class="Apple-converted-space">    </span>&lt;div style="text-align: center;"&gt;</p>
-<p class="p1"><span class="Apple-converted-space">        </span>&lt;p&gt;Bitte gib das Passwort ein:&lt;/p&gt;</p>
-<p class="p1"><span class="Apple-converted-space">        </span>&lt;input type="password" id="passwort" placeholder="Passwort eingeben"&gt;</p>
-<p class="p1"><span class="Apple-converted-space">        </span>&lt;button onclick="zeigen()"&gt;Senden&lt;/button&gt;</p>
-<p class="p1"><span class="Apple-converted-space">    </span>&lt;/div&gt;</p>
-<p class="p2"><br></p>
-<p class="p1"><span class="Apple-converted-space">    </span>&lt;div id="herz"&gt;</p>
-<p class="p1"><span class="Apple-converted-space">        </span>I Love You</p>
-<p class="p1"><span class="Apple-converted-space">    </span>&lt;/div&gt;</p>
-<p class="p2"><br></p>
-<p class="p1"><span class="Apple-converted-space">    </span>&lt;script&gt;</p>
-<p class="p1"><span class="Apple-converted-space">        </span>function zeigen() {</p>
-<p class="p1"><span class="Apple-converted-space">            </span>var eingabe = document.getElementById("passwort").value;</p>
-<p class="p1"><span class="Apple-converted-space">            </span>if (eingabe === "epi") {</p>
-<p class="p1"><span class="Apple-converted-space">                </span>document.getElementById("herz").style.display = "block";</p>
-<p class="p1"><span class="Apple-converted-space">            </span>} else {</p>
-<p class="p1"><span class="Apple-converted-space">                </span>alert("Falsches Passwort. Versuche es noch einmal.");</p>
-<p class="p1"><span class="Apple-converted-space">            </span>}</p>
-<p class="p1"><span class="Apple-converted-space">        </span>}</p>
-<p class="p1"><span class="Apple-converted-space">    </span>&lt;/script&gt;</p>
-<p class="p2"><br></p>
-<p class="p1">&lt;/body&gt;</p>
-<p class="p2"><br></p>
-<p class="p1">&lt;/html&gt;</p>
+
+    <div style="text-align: center;">
+        <p>Bitte gib das Passwort ein:</p>
+        <input type="password" id="passwort" placeholder="Passwort eingeben">
+        <button onclick="zeigen()">Senden</button>
+    </div>
+
+    <div id="herz">
+        I Love You
+    </div>
+
+    <script>
+        function zeigen() {
+            var eingabe = document.getElementById("passwort").value;
+            if (eingabe === "epi") {
+                document.getElementById("herz").style.display = "block";
+            } else {
+                alert("Falsches Passwort. Versuche es noch einmal.");
+            }
+        }
+    </script>
+
 </body>
+
 </html>
